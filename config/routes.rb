@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post '/products', to: 'products#create'
   get '/products/:id', to: 'products#show'
   get '/products/:id/edit', to: 'products#edit', as: 'product'
+  patch '/products/:id/edit', to: 'products#update'
 end
